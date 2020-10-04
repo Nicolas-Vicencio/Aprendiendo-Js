@@ -8,6 +8,7 @@ import responsiveMedia from './objeto_responsive.js'
 import responsiveTester from './responsive_test.js'
 import userDeviceInfo from "./deteccion_dispositivos.js";
 import networkStatus from "./deteccion_red.js";
+import webCam from "./deteccion_cam.js";
 
 
 const d = document;
@@ -32,6 +33,7 @@ d.addEventListener('DOMContentLoaded', e => {
  )
   responsiveTester('responsive-tester')
   userDeviceInfo('user-device')
+  webCam('webcam')
 
 })
 

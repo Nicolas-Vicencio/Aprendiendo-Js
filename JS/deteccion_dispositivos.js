@@ -56,21 +56,21 @@ export default function userDeviceInfo(id) {
   `;
  
 // Contenido exclusivo
-    if(isBrowser.chrome()){
-      $id.innerHTML += `<p> <mark>Este contenido solo se ve en Chrome</mark></p>`
-    }
-    if(isBrowser.firefox()){
-      $id.innerHTML += `<p> <mark>Este contenido solo se ve en Firefox</mark></p>`
-    }
-    if(isDesktop.linux()){
-      $id.innerHTML = `<p><mark>Descarga nuestro software para Linux</mark></p>`
-    }
-    if(isDesktop.mac()){
-      $id.innerHTML = `<p><mark>Descarga nuestro software para Mac Os</mark></p>`
-    }
-    if(isDesktop.windows()){
-      $id.innerHTML = `<p><mark>Descarga nuestro software para Windows</mark></p>`
-    }
+    // if(isBrowser.chrome()){
+    //   $id.innerHTML += `<p> <mark>Este contenido solo se ve en Chrome</mark></p>`
+    // }
+    // if(isBrowser.firefox()){
+    //   $id.innerHTML += `<p> <mark>Este contenido solo se ve en Firefox</mark></p>`
+    // }
+    // if(isDesktop.linux()){
+    //   $id.innerHTML = `<p><mark>Descarga nuestro software para Linux</mark></p>`
+    // }
+    // if(isDesktop.mac()){
+    //   $id.innerHTML = `<p><mark>Descarga nuestro software para Mac Os</mark></p>`
+    // }
+    // if(isDesktop.windows()){
+    //   $id.innerHTML = `<p><mark>Descarga nuestro software para Windows</mark></p>`
+    // }
 
 // Redirecciones
     if(isMobile.android()){
