@@ -7,6 +7,8 @@ import darkTheme from './dark_mode.js'
 import responsiveMedia from './objeto_responsive.js'
 import responsiveTester from './responsive_test.js'
 import userDeviceInfo from "./deteccion_dispositivos.js";
+import networkStatus from "./deteccion_red.js";
+
 
 const d = document;
 
@@ -42,5 +44,5 @@ d.addEventListener('keydown', e => {
 
 // Esta funcion la enviamos fuera de la ejecucion para que el evento del DOMCOntentLoaded de dark-mode.js funcione, ya que no puede haber un evento dentro otro evento del mismo tipo
 darkTheme('.dark-mode-btn', 'dark-theme')
-   
+networkStatus()
   
