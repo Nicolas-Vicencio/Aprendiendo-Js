@@ -74,8 +74,11 @@ img{
   /* Si quiere que el menu ssalga de arriba (o, -100)
   De abajo (0, 100) De la izquierda (100,0) De la derecha (-100, 0) */
   transform: translate(0%, -100%);
-  transition: all 0.3s ease;
-  overflow-y:inherit;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  overflow-y:auto;
+  
+ 
+
 }
 
 
@@ -86,6 +89,7 @@ img{
 
 
 .panel-btn{
+  background-color: var(--main-color);
   position: fixed;
   z-index: 999;
   bottom: 1vh;
@@ -93,12 +97,16 @@ img{
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  padding: 0;
+  padding: 0px;
   display: flex;
   justify-content: center;
   align-items: center ;
-  background-color: var(--main-color);
+  
 }
+
+
+
+
 
 .menu {
   width: inherit;

@@ -10,7 +10,7 @@ export default function webCam (id){
       $video.srcObject = stream
       $video.play()
     }).catch(err => {
-      $video.insertAdjacentHTML('afterend', `<p><mark>Se ha producido el siguiente error!: ${err}</mark></p>`)
+      $video.insertAdjacentHTML('afterend', `<p>Se ha producido el siguiente error!: <mark>${err}</mark></p>`)
       console.log(`Sucedio el siguiente error: ${err}`);
     })
   }
