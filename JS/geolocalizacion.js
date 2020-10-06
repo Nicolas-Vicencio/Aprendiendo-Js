@@ -21,11 +21,11 @@ export default function getGeolocation(id) {
     </ul>
     <a href='https://www.google.com/maps/@${coords.latitude},${coords.longitude},20z' target="_blank" rel="noopener">Ver en Google Maps</a>
         `;
-    console.log(position);
+    // console.log(position);
   };
   const error = (err) => {
     $id.innerHTML = `<p>Error: <mark> ${err.code} ${err.message}</mark></p> `;
-    console.log(`Error: ${err.code} ${err.message}`);
+    // console.log(`Error: ${err.code} ${err.message}`);
   };
 
   n.geolocation.getCurrentPosition(success, error, options);

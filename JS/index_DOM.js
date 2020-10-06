@@ -11,6 +11,7 @@ import networkStatus from "./deteccion_red.js";
 import webCam from "./deteccion_cam.js";
 import getGeolocation from "./geolocalizacion.js";
 import searchFilter from "./filtro_busquedas.js";
+import digitalDraw from "./sorteo_digital.js";
 
 
 const d = document;
@@ -38,6 +39,7 @@ d.addEventListener('DOMContentLoaded', e => {
   webCam('webcam')
   getGeolocation('geolocation')
   searchFilter(".card-filter", ".card")
+  digitalDraw('.list', '.draw-btn')
 
 })
 
